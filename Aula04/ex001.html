@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Exemplo 01</title>
+        <style>* {
+            font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>OLá, mundo!</h1>
+        <script>
+            window.alert('Olá, mundo!');
+            let getAnswer = window.prompt("Qual é o seu nome?");
+            if (getAnswer === "") {
+                getAnswer = 'user';
+            }
+
+            const getConfirm = window.confirm('Você está gostando deste curso?');
+            console.log(`Olá ${getAnswer.toUpperCase()}, seja bem-vindo!`);
+            console.log(`${getAnswer.toUpperCase()} está gostando?`, getConfirm);
+        </script>
+    </body>
+</html>
